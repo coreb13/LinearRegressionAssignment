@@ -20,31 +20,30 @@ Which variables are significant in predicting the demand for shared bikes. How w
 
 
 ## Conclusions
-- The R-squared value of the train set is 82.71% whereas the test set has a value of 81.13% which suggests that our model broadly explains the variance quite accurately on the test set and thus we can conclude that it is a good model.
+- The R-squared value for the training set is 82.71%, while the test set shows a slightly lower value of 81.13%. This indicates that our model effectively captures the variance in the test set, suggesting it is a reliable and robust model.
 
-- Our developed model's mean squared error is almost 0 on both the training and testing datasets which suggests that the variance is accurately predicted on the test set. The p-values and VIF were used to select the significant variables. RFE was also conducted for automated selection of variables.
+- The mean squared error of our developed model is nearly zero for both the training and testing datasets, implying that the model predicts the variance with high accuracy on the test set. We utilized p-values and Variance Inflation Factor (VIF) to identify significant variables, and Recursive Feature Elimination (RFE) was employed for automated variable selection.
 
-- The major steps included in the python notebook are data interpretation, data visualisation, data pre-processing, model training, feature selection, residual analysis, model evaluation on the test set.
+- The key steps outlined in the Python notebook include data interpretation, data visualization, data preprocessing, model training, feature selection, residual analysis, and model evaluation on the test set.
 
-- Concepts such as EDA, p-value, VIF, RFE were used and model building was done using statsmodels library
+- Techniques such as Exploratory Data Analysis (EDA), p-values, VIF, and RFE were applied, with the model constructed using the statsmodels library.
 
-- GrLivArea is by far the most important predictor
+- GrLivArea stands out as the most critical predictor.
 
-- The top variables are intuitive.
+- The top variables align with intuitive expectations.
 
-- Lasso is the chosen model for the final model, because it creates a simple model with the top features.
+- Lasso was selected as the final model due to its ability to produce a straightforward model incorporating the most important features.
 
-- Significant variables to predict the demand for shared bikes
-  * holiday
-  * temp
-  * hum
-  * windspeed
+- Key variables significantly influencing the demand for shared bikes include:
+  * Holiday
+  * Temperature (temp)
+  * Humidity (hum)
+  * Windspeed
   * Season
-  * months(January, July, September, November, December)
+  * Months (January, July, September, November, December)
   * Year (2019)
   * Sunday
-  * weathersit( Light Snow, Mist + Cloudy)
-
+  * Weather conditions (Light Snow, Mist + Cloudy)
 
 
 ## Technologies Used
@@ -62,4 +61,4 @@ Which variables are significant in predicting the demand for shared bikes. How w
 
 
 ## Contact
-Created by [@darekarankita0] - feel free to contact me!
+Created by [@coreb13] - feel free to contact me!
